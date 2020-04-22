@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/client.css">
+
+  <link rel="stylesheet" href="css/svganimation.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+  <style>
+    .darkmode--activated .section-title,
+    .darkmode--activated .site-navbar ul li a,
+    .darkmode--activated .h-entry h2 a,
+    .darkmode--activated h1,
+    .darkmode--activated .text-black {
+      color: #fff !important;
+    }
+
+    .darkmode--activated .site-navbar,.darkmode--activated .unit-4 {
+      background: #000;
+
+    }
+
+    .darkmode--activated p,
+    .darkmode--activated .site-footer h2,
+    .darkmode--activated .site-footer ul li a,
+    .darkmode--activated .site-footer a {
+      color: #fff;
+    }
+
+    .darkmode--activated .yellow{
+      color: #ffc107 !important;
+    }
+
+    .darkmode--activated .red{
+      color: #fd0019 !important;
+    }
+
+    .darkmode--activated .ggreen{
+      color: #68f715 !important;
+    }
+
+    .darkmode--activated .whiteblack{
+      color: #fff !important;
+      background: #000 !important;
+    }
+
+    .darkmode--activated .orange{
+      color: #fd7e14 !important;
+    }
+    .darkmode--activated .pale{
+      color: #00ffd5 !important;
+    }
+
+  
+
+
+
+
+    .darkmode--activated .unit-4 p {
+      color: #000;
+    }
+
+
+
+    nav ul li a {
+      font-size: 1.3rem;
+      font-weight: 800;
+    }
+  </style>
+
+  <style>
+    #darkmode {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+
+
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+
+    }
+
+    #darkmode:hover {
+      background-color: #313436;
+    }
+  </style>
+
+
+  <button onclick="darkFunction()" id="darkmode" title="Go to top"><span class="icon-wb_sunny"></span></button>
+
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+  <div class="site-wrap" id="home-section">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+
+
+    <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
+
+      <div class="container">
+        <div class="row align-items-center">
+
+          <div class="col-6 col-md-3 col-xl-4  d-block">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0 yellow">Stotri<span
+                  class="text-primary">.</span> </a></h1>
+
+
+          </div>
+
+
+
+          <div class="col-12 col-md-9 col-xl-8 main-menu">
+
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ml-0 pl-0">
+                
+
+
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#features-section" class="nav-link">Features</a></li>
+                <li class="has-children">
+                  <a href="#about-section" class="nav-link">About Us</a>
+                  <ul class="dropdown arrow-top">
+
+                    <li><a href="#our-team-section" class="nav-link whiteblack">Our Team</a></li>
+                    <li><a href="#testimonials-section" class="nav-link whiteblack">Testimonials</a></li>
+                    <li><a href="#blog-section" class="nav-link whiteblack">News & Events</a></li>
+                  </ul>
+                </li>
+                <li><a href="#clients" class="nav-link">Clients</a></li>
+                <li><a href="gallery.html" class="nav-link">gallery</a></li>
+
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 col-md-9 d-inline-block d-lg-none ml-md-0"><a href="#"
+              class="site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+          </div>
+
+        </div>
+      </div>
+
+    </header>
+
+
+    <div class="site-section bg-image2 overlay" style="background-image: url('images/stock.gif');">
+
+      <div style="margin: 10px;">
+        <div class="container">
+          <div class="row " style="padding-top: 10px;">
+
+            <div class="col-md-12 col-lg-6 mb-6 mb-lg-6" style="padding-top: 180px;">
+              <h1 style="font-size: 3.5rem;
+                font-weight: 900;
+                color: #fff;">Put Your <span style="color:#20c997;">Money</span> For Work. <br> <span
+                  class="typed-words" style="color: #ffc107;"></span></h1>
+              <p style="font-size: 1.5rem;
+                font-weight: 400;
+                color: #fff;" style="font-size: 1.5rem;
+                font-weight: 400;
+                color: #fff;" class="mb-5">Why to put your
+                <span class="money"
+                  style="font-size: 1.7rem; color: #fd7e14; text-decoration: underline;font-weight: 600;"></span> in
+                Bank for <br>
+                <span class="savings"
+                  style="font-size: 1.7rem; color: #ffc107; text-decoration: underline;font-weight: 600;"></span> When
+                your can actually Earn. <br>
+                Let's Money Earn for <span class="us"
+                  style="font-size: 1.7rem; color: #71bc42; text-decoration: underline;font-weight: 600;"></span> </p>
+              <div>
+                <a href="#" class="btn btn-success mr-2 mb-2">Get Started</a>
+              </div>
+            </div>
+
+            <div class="col-md-12 col-lg-6 mb-6 mb-lg-6" style="padding-top: 100px;">
+              <div id="svgan">
+                <svg width="894" height="737" viewBox="0 0 894 737" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g id="undraw_investing_7u74 1">
+                    <g id="plantleaves">
+                      <path id="Vector"
+                        d="M749.228 455.204C751.488 456.026 753.909 456.311 756.298 456.038C758.687 455.765 760.981 454.94 762.997 453.63C765.013 452.319 766.698 450.558 767.918 448.485C769.137 446.412 769.859 444.084 770.025 441.685C770.192 439.286 769.799 436.881 768.877 434.66C767.956 432.438 766.531 430.461 764.715 428.884C762.899 427.308 760.742 426.174 758.413 425.573C756.085 424.972 753.648 424.921 751.296 425.422L751.685 433.415L747.903 426.565C744.192 428.309 741.325 431.455 739.932 435.312C739.437 436.662 739.137 438.077 739.039 439.512C738.8 442.88 739.666 446.234 741.504 449.065C743.343 451.897 746.055 454.052 749.228 455.204V455.204Z"
+                        fill="#48C50D" />
+                      <path id="Vector_2"
+                        d="M767.939 547.905C766.604 541.108 772.389 535.082 778.102 531.165C783.816 527.248 790.492 523.399 792.441 516.752C795.243 507.199 786.897 498.45 780.402 490.905C775.583 485.306 771.444 479.155 768.073 472.582C766.607 470 765.609 467.18 765.124 464.25C764.612 460.016 765.972 455.802 767.343 451.763C771.909 438.307 776.791 424.964 781.988 411.733"
+                        stroke="#3F3D56" stroke-miterlimit="10" />
+                      <path id="Vector_3"
+                        d="M749.868 453.146C752.128 453.968 754.548 454.253 756.938 453.98C759.327 453.707 761.62 452.882 763.637 451.572C765.653 450.261 767.337 448.5 768.557 446.427C769.777 444.354 770.498 442.027 770.665 439.628C770.831 437.228 770.439 434.823 769.517 432.602C768.596 430.38 767.171 428.403 765.355 426.827C763.539 425.25 761.382 424.116 759.053 423.516C756.724 422.915 754.288 422.863 751.936 423.364L752.324 431.357L748.543 424.507C744.832 426.251 741.965 429.397 740.572 433.254C740.077 434.605 739.776 436.019 739.678 437.454C739.44 440.822 740.305 444.176 742.144 447.008C743.983 449.839 746.694 451.994 749.868 453.146V453.146Z"
+                        stroke="#3F3D56" stroke-miterlimit="10" />
+                      <path id="Vector_4"
+                        d="M766.041 408.973C766.928 406.525 768.417 404.341 770.37 402.62C772.323 400.899 774.678 399.697 777.218 399.126L778.497 406.724L780.867 398.744C784.158 398.793 787.349 399.886 789.978 401.866C792.608 403.847 794.54 406.611 795.495 409.761C796.451 412.911 796.381 416.283 795.295 419.391C794.209 422.498 792.164 425.18 789.455 427.049C786.745 428.918 783.512 429.878 780.221 429.79C776.931 429.702 773.754 428.571 771.148 426.559C768.543 424.548 766.644 421.76 765.726 418.599C764.808 415.438 764.918 412.067 766.041 408.973H766.041Z"
+                        fill="#48C50D" />
+                      <path id="Vector_5"
+                        d="M766.894 406.229C767.781 403.782 769.27 401.597 771.223 399.876C773.176 398.155 775.531 396.953 778.071 396.382L779.349 403.98L781.72 396C785.011 396.049 788.202 397.142 790.831 399.123C793.46 401.103 795.392 403.868 796.348 407.017C797.303 410.167 797.233 413.539 796.148 416.647C795.062 419.754 793.017 422.436 790.307 424.305C787.598 426.175 784.365 427.135 781.074 427.047C777.784 426.958 774.606 425.827 772.001 423.815C769.395 421.804 767.497 419.016 766.579 415.855C765.661 412.694 765.771 409.323 766.894 406.229V406.229Z"
+                        stroke="#3F3D56" stroke-miterlimit="10" />
+                      <path id="Vector_6"
+                        d="M777.676 491.059C781.26 492.359 785.198 492.295 788.738 490.879C792.278 489.462 795.174 486.793 796.872 483.379C798.571 479.965 798.953 476.045 797.948 472.367C796.942 468.689 794.618 465.51 791.419 463.435L789.597 469.568L788.306 461.88C788.293 461.874 788.28 461.869 788.266 461.865C786.349 461.17 784.314 460.859 782.277 460.95C780.24 461.041 778.241 461.532 776.394 462.396C774.547 463.26 772.888 464.479 771.512 465.984C770.136 467.489 769.069 469.25 768.374 471.167C767.679 473.084 767.368 475.119 767.459 477.156C767.55 479.193 768.041 481.192 768.905 483.039C769.769 484.886 770.988 486.545 772.493 487.921C773.998 489.297 775.759 490.364 777.676 491.059V491.059Z"
+                        fill="#48C50D" />
+                      <path id="Vector_7"
+                        d="M778.415 488.28C781.999 489.58 785.937 489.516 789.477 488.1C793.017 486.683 795.912 484.014 797.611 480.6C799.309 477.186 799.692 473.266 798.686 469.588C797.681 465.91 795.357 462.731 792.158 460.656L790.336 466.789L789.045 459.101C789.032 459.095 789.019 459.09 789.005 459.086C785.134 457.681 780.863 457.872 777.132 459.617C773.402 461.361 770.517 464.516 769.113 468.388C767.708 472.259 767.9 476.53 769.644 480.26C771.388 483.991 774.543 486.875 778.415 488.28V488.28Z"
+                        stroke="#3F3D56" stroke-miterlimit="10" />
+                      <path id="Vector_8"
+                        d="M761.51 516.847C762.126 520.354 763.929 523.542 766.617 525.877C769.305 528.213 772.715 529.552 776.273 529.672C779.832 529.792 783.324 528.685 786.163 526.536C789.002 524.387 791.016 521.327 791.867 517.869C792.717 514.412 792.354 510.767 790.836 507.546C789.318 504.325 786.739 501.723 783.532 500.178C780.324 498.633 776.682 498.237 773.217 499.058C769.752 499.879 766.675 501.867 764.502 504.687L771.421 515.101L761.967 509.573C761.234 511.926 761.077 514.421 761.51 516.847V516.847Z"
+                        fill="#48C50D" />
+                      <path id="Vector_9"
+                        d="M762.149 514.789C762.765 518.296 764.569 521.485 767.257 523.82C769.945 526.155 773.354 527.495 776.913 527.614C780.472 527.734 783.963 526.627 786.802 524.478C789.641 522.329 791.655 519.269 792.506 515.812C793.357 512.354 792.993 508.709 791.475 505.488C789.958 502.267 787.379 499.666 784.171 498.12C780.963 496.575 777.321 496.18 773.857 497.001C770.392 497.822 767.315 499.809 765.141 502.629L772.06 513.043L762.607 507.516C761.874 509.869 761.717 512.363 762.149 514.789V514.789Z"
+                        stroke="#3F3D56" stroke-miterlimit="10" />
+                    </g>
+                    <g id="Group 1">
+                      <path id="Vector_10"
+                        d="M746.379 557.113C746.379 557.113 760.082 551.743 764.212 548.802C768.342 545.861 785.291 542.35 786.315 547.066C787.34 551.782 806.908 570.523 791.438 570.647C775.967 570.772 755.491 573.186 751.369 570.675C747.247 568.164 746.379 557.113 746.379 557.113Z"
+                        fill="#1A6B7D" />
+                      <path id="Vector_11" opacity="0.2"
+                        d="M791.714 569.006C776.243 569.131 755.767 571.544 751.645 569.033C748.506 567.121 747.255 560.26 746.837 557.095C746.547 557.107 746.379 557.113 746.379 557.113C746.379 557.113 747.247 568.164 751.369 570.675C755.491 573.186 775.967 570.772 791.438 570.647C795.903 570.611 797.446 569.023 797.361 566.669C796.741 568.091 795.038 568.979 791.714 569.006Z"
+                        fill="black" />
+                    </g>
+                    <g id="holebar">
+                      <g id="fistbar">
+                        <path id="Vector_12"
+                          d="M216.149 413H179.851C173.306 413 168 418.306 168 424.851V559.149C168 565.694 173.306 571 179.851 571H216.149C222.694 571 228 565.694 228 559.149V424.851C228 418.306 222.694 413 216.149 413Z"
+                          fill="#00B0FF" />
+                        <path id="Vector_13"
+                          d="M216.149 413H179.851C173.306 413 168 418.306 168 424.851V559.149C168 565.694 173.306 571 179.851 571H216.149C222.694 571 228 565.694 228 559.149V424.851C228 418.306 222.694 413 216.149 413Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="secondbar">
+                        <path id="Vector_14"
+                          d="M330.149 318H293.851C287.306 318 282 323.306 282 329.851V559.149C282 565.694 287.306 571 293.851 571H330.149C336.694 571 342 565.694 342 559.149V329.851C342 323.306 336.694 318 330.149 318Z"
+                          fill="#00B0FF" />
+                        <path id="Vector_15"
+                          d="M330.149 318H293.851C287.306 318 282 323.306 282 329.851V559.149C282 565.694 287.306 571 293.851 571H330.149C336.694 571 342 565.694 342 559.149V329.851C342 323.306 336.694 318 330.149 318Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="thirdbar">
+                        <path id="Vector_16"
+                          d="M443.149 253H406.851C400.306 253 395 258.306 395 264.851V560.149C395 566.694 400.306 572 406.851 572H443.149C449.694 572 455 566.694 455 560.149V264.851C455 258.306 449.694 253 443.149 253Z"
+                          fill="#00B0FF" />
+                        <path id="Vector_17"
+                          d="M444.149 252H407.851C401.306 252 396 257.306 396 263.851V559.149C396 565.694 401.306 571 407.851 571H444.149C450.694 571 456 565.694 456 559.149V263.851C456 257.306 450.694 252 444.149 252Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="fourbar">
+                        <path id="Vector_18"
+                          d="M558.149 189H521.851C515.306 189 510 194.306 510 200.851V559.149C510 565.694 515.306 571 521.851 571H558.149C564.694 571 570 565.694 570 559.149V200.851C570 194.306 564.694 189 558.149 189Z"
+                          fill="#00B0FF" />
+                        <path id="Vector_19"
+                          d="M558.149 189H521.851C515.306 189 510 194.306 510 200.851V559.149C510 565.694 515.306 571 521.851 571H558.149C564.694 571 570 565.694 570 559.149V200.851C570 194.306 564.694 189 558.149 189Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="fivthbar">
+                        <path id="Vector_20"
+                          d="M672.149 80H635.851C629.306 80 624 85.3057 624 91.8505V560.149C624 566.694 629.306 572 635.851 572H672.149C678.694 572 684 566.694 684 560.149V91.8505C684 85.3057 678.694 80 672.149 80Z"
+                          fill="#00B0FF" />
+                        <path id="Vector_21"
+                          d="M672.149 79H635.851C629.306 79 624 84.3057 624 90.8505V559.149C624 565.694 629.306 571 635.851 571H672.149C678.694 571 684 565.694 684 559.149V90.8505C684 84.3057 678.694 79 672.149 79Z"
+                          stroke="#3D4556" stroke-miterlimit="10" />
+                      </g>
+                      <path id="Vector_22" d="M861 571H0" stroke="#3F3D56" stroke-miterlimit="10" />
+                    </g>
+                    <g id="trendbar">
+                      <path id="Vector_23" d="M186 369L300 272.859L415 207.078L529 143.321L643 32" stroke="#3F3D56"
+                        stroke-miterlimit="10" />
+                      <g id="thirdcircle">
+                        <path id="Vector_24"
+                          d="M425 211C431.075 211 436 206.075 436 200C436 193.925 431.075 189 425 189C418.925 189 414 193.925 414 200C414 206.075 418.925 211 425 211Z"
+                          fill="#EE790D" />
+                        <path id="Vector_25"
+                          d="M425 211C431.075 211 436 206.075 436 200C436 193.925 431.075 189 425 189C418.925 189 414 193.925 414 200C414 206.075 418.925 211 425 211Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="fourthcircle">
+                        <path id="Vector_26"
+                          d="M529 153C535.075 153 540 148.075 540 142C540 135.925 535.075 131 529 131C522.925 131 518 135.925 518 142C518 148.075 522.925 153 529 153Z"
+                          fill="#EE790D" />
+                        <path id="Vector_27"
+                          d="M529 153C535.075 153 540 148.075 540 142C540 135.925 535.075 131 529 131C522.925 131 518 135.925 518 142C518 148.075 522.925 153 529 153Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="fivthcircle">
+                        <path id="Vector_28"
+                          d="M643 43C649.075 43 654 38.0751 654 32C654 25.9249 649.075 21 643 21C636.925 21 632 25.9249 632 32C632 38.0751 636.925 43 643 43Z"
+                          fill="#EE790D" />
+                        <path id="Vector_29"
+                          d="M643 43C649.075 43 654 38.0751 654 32C654 25.9249 649.075 21 643 21C636.925 21 632 25.9249 632 32C632 38.0751 636.925 43 643 43Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="firstcircle">
+                        <path id="Vector_30"
+                          d="M187 379C193.075 379 198 374.075 198 368C198 361.925 193.075 357 187 357C180.925 357 176 361.925 176 368C176 374.075 180.925 379 187 379Z"
+                          fill="#EE790D" />
+                        <path id="Vector_31"
+                          d="M187 379C193.075 379 198 374.075 198 368C198 361.925 193.075 357 187 357C180.925 357 176 361.925 176 368C176 374.075 180.925 379 187 379Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                      <g id="secondcircle">
+                        <path id="Vector_32"
+                          d="M301 281C307.075 281 312 276.075 312 270C312 263.925 307.075 259 301 259C294.925 259 290 263.925 290 270C290 276.075 294.925 281 301 281Z"
+                          fill="#EE790D" />
+                        <path id="Vector_33"
+                          d="M301 281C307.075 281 312 276.075 312 270C312 263.925 307.075 259 301 259C294.925 259 290 263.925 290 270C290 276.075 294.925 281 301 281Z"
+                          stroke="#3F3D56" stroke-miterlimit="10" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="site-section">
+
+    </div>
+
+
+  </div>
+
+
+
+  <div class="site-section" id="features-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+        <div class="col-7 text-center  mb-5">
+          <h2 class="section-title green">Imagine Services</h2>
+          <p style="font-size: 1.1rem;
+            font-weight: 500;
+            " class="lead pale">We Buy Sell Stocks. not only that we Invest In Scalable Startups. We aslo Invest in
+            Bitcoin.We are the One of the Oldest Venture Capital Company.</p>
+        </div>
+      </div>
+      <div class="row align-items-stretch">
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+
+          <div class="unit-4 d-block">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap"><span class="text-primary icon-trending_up"></span></span>
+            </div>
+            <div>
+              <h3 class="yellow" style="font-size: 1.8rem;">Buy & Sell Stocks</h3>
+              <p class="pale">Join us buy and sell stockes and earn money.No Broker Fee Required. buy and sell when ever you want. if
+                your are new your experts will guid you. </p>
+              <p><a href="#">Learn More</a></p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="unit-4 d-block">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap"><span class="text-primary icon-building-o"></span></span>
+            </div>
+            <div>
+              <h3 class="yellow" style="font-size: 1.8rem;">Invest In Startup</h3>
+              <p class="pale">Don't Know where to Invest. startup are the best place. go and get started. pick the startup in which
+                you want.
+                all the paper work is up To us </p>
+              <p><a href="#">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="unit-4 d-block">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap"><span class="text-primary icon-bitcoin"></span></span>
+            </div>
+            <div>
+              <h3 class="yellow" style="font-size: 1.8rem;">Buy & Sell Bitcoin</h3>
+              <p class="pale">Safe and Secure way to buy and sell bitcoin. Invest in bitcoin and make more money as market goes
+                up.one of the trending market to invest.</p>
+              <p><a href="#">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up">
+          <div class="unit-4 d-block">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap"><span class="text-primary icon-user"></span></span>
+            </div>
+            <div>
+              <h3 class="yellow" style="font-size: 1.8rem;">Become Angle Invester</h3>
+              <p class="pale">Want to become angle Invester.come to us. we will make you to meet startup and company you want </p>
+              <p><a href="#">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="unit-4 d-block">
+            <div class="unit-4-icon mb-3">
+              <span class="icon-wrap"><span class="text-primary icon-sentiment_satisfied "></span></span>
+            </div>
+            <div>
+              <h3 class="yellow" style="font-size: 1.8rem;">100% Growth</h3>
+              <p class="pale">Don't worry your money is safe with us. your Experts will make sure you are investment are safe. they
+                will aslo help you to invest in right place. </p>
+              <p><a href="#">Learn More</a></p>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="unit-4 d-block">
+            <div class="unit-4-icon mb-3">
+              <span  class="icon-wrap"><span class="text-primary icon-security"></span></span>
+            </div>
+            <div>
+              <h3 class="yellow" style="font-size: 1.8rem;">Safe & Secure</h3>
+              <p class="pale">our process is safe and secure and easy one. if you want to join it takes only 1hr of your time contact
+                us or Come to your office doors are always open</p>
+              <p><a href="#">Learn More</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-big">
+    <div class="container">
+      <div class="row mb-5 site-section">
+        <div class="col-lg-7" data-aos="fade-right">
+          <img src="images/undraw_investment_data_yfvt.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+          <h2 class="text-black yellow">Invest and Earn</h2>
+          <p class="mb-4 pale">invest in stocks or shares or in startup and start earing now why depend on others.</p>
+
+          <div class="author-box" data-aos="fade-left">
+            <div class="d-flex mb-4">
+              <div class="mr-3">
+                <img src="images/person6.jpeg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div class="mr-auto text-black green">
+                <strong class="font-weight-bold mb-0 green">Larry Oxrich</strong> <br>
+                Co-Founder, coinbay Inc.
+              </div>
+            </div >
+            <blockquote class="pale">&ldquo;money at bank is money for others Invest and earn don't realy on any one &rdquo;
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 row mb-5 site-section ">
+        <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+          <img src="images/undraw_progress_data_4ebj.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
+          <h2 class="text-black orange">Track and Monitor your Investment</h2>
+          <p class="mb-4 pale">tack your investment check it every day and every sec. any help needed your expert are here.
+          </p>
+
+
+
+          <div class="author-box" data-aos="fade-right">
+            <div class="d-flex mb-4">
+              <div class="mr-3">
+                <img src="images/person6.jpeg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div class="mr-auto text-black yellow">
+                <strong class="font-weight-bold mb-0">Jeff danny</strong> <br>
+                Co-Founder, marzon Inc.
+              </div>
+            </div>
+            <blockquote class="pale">&ldquo;money was waste at bank. so I started investment and made it double &rdquo;</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mb-5 site-section">
+        <div class="col-lg-7" data-aos="fade-right">
+          <img src="images/undraw_Savings_dwkw.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5 pl-lg-5 ml-auto mt-md-5">
+          <h2 class="text-black red">Put Your Savings At Work</h2>
+          <p class="mb-4 pale">put your saving to buy stocks or invest in any company or buy bitcoin. start earning now or
+            else never</p>
+
+          <div class="author-box" data-aos="fade-left">
+            <div class="d-flex mb-4">
+              <div class="mr-3">
+                <img src="images/person6.jpeg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div class="mr-auto text-black bl yellow">
+                <strong class="font-weight-bold mb-0">Karthik</strong> <br>
+                Co-Founder, pesto Inc.
+              </div>
+            </div>
+            <blockquote class="pale">&ldquo; put your money to work and start investing &rdquo;</blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5 row mb-5 site-section ">
+        <div class="col-lg-7 order-1 order-lg-2" data-aos="fade-left">
+          <img src="images/undraw_cohort_analysis_stny.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5 pr-lg-5 mr-auto mt-5 order-2 order-lg-1">
+          <h2 class="text-black yellow">Meet Your Experts</h2>
+          <p class="mb-4 pale">Our Experts are Highly Qualified. they have lot of years of research and market analysis.</p>
+
+
+
+          <div class="author-box" data-aos="fade-right">
+            <div class="d-flex mb-4">
+              <div class="mr-3">
+                <img src="images/person6.jpeg" alt="Image" class="img-fluid rounded-circle">
+              </div>
+              <div class="mr-auto text-black red">
+                <strong class="font-weight-bold mb-0 ">Morry James</strong> <br>
+                Co-Founder, Infotec Inc.
+              </div>
+            </div>
+            <blockquote class="pale">&ldquo;Stotri Expers are highly Qualified and has lot of researh and market analysis&rdquo;
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <section id="clients" class="section-bg">
+    <div class="container">
+        <div class="section-header">
+            <h3 class="section-title mb-3 ggreen " >Our CLients</h3>
+            <p style="font-size: 1.5rem;" class="pale">Meet our happy clients</p>
+        </div>
+        <div class="row no-gutters clients-wrap clearfix wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460149/abof.png" class="img-fluid" alt=""> </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460224/cropped-cropped-20170720-lucuLogo-squ2-e1500543540803.png" class="img-fluid" alt=""> </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460269/104840a62d46c05d285762857fecb61a.png" class="img-fluid" alt=""> </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460358/client-4.png" class="img-fluid" alt=""> </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460269/104840a62d46c05d285762857fecb61a.png" class="img-fluid" alt=""> </div>
+          </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+              <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460358/client-4.png" class="img-fluid" alt=""> </div>
+          </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460418/client-7.png" class="img-fluid" alt=""> </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6">
+                <div class="client-logo"> <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1559460269/104840a62d46c05d285762857fecb61a.png" class="img-fluid" alt=""> </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <div class="site-section bg-light" id="about-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-3 ggreen ">About Us</h2>
+        </div>
+      </div>
+      <div class="row mb-5">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="images/undraw_bookmarks_r6up.svg" alt="Image" class="img-fluid">
+        </div>
+        <div class="col-lg-5 ml-auto pl-lg-5">
+          <h2 class="text-black mb-4 h3 font-weight-bold orange">Our Mission</h2>
+          <p class="mb-4 pale">our goal is to bring startup,company,market to the people who are willing to invest. we bring
+            investers and startup in one place so both can get benefits. </p>
+          <ul class="ul-check mb-5 list-unstyled success">
+            <li style="font-size: 1.5rem; font-weight: 500;">StartUp</li>
+            <li style="font-size: 1.5rem; font-weight: 500;">Investers</li>
+            <li style="font-size: 1.5rem; font-weight: 500;">Stocks Market</li>
+            <li style="font-size: 1.5rem; font-weight: 500;">Bitcoin</li>
+          </ul>
+          <p><a href="#" class="btn btn-warning">Learn More</a></p>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <div class="site-section" id="our-team-section">
+    <div class="container">
+      <div class="row mb-5 justify-content-center text-center" data-aos="fade-up">
+        <div class="col-7 text-center  mb-5">
+          <h2 class="section-title yellow">Our Team</h2>
+          <p style="font-size: 1.5rem;" class="pale">Meet your team one of the best hard working to meet the requirements of all your
+            coustmers</p>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="person">
+            <div class="bio-img">
+              <figure>
+                <img src="images/person1.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+            <h2 class="text-black h1 ggreen">James Blue</h2>
+            <span class="sub-title d-block mb-3">President</span>
+            <p class="pale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+              perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="person">
+            <div class="bio-img">
+              <figure>
+                <img src="images/person2.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+            <h2 class="text-black h1 yellow">Jemmy Jhon</h2>
+            <span class="sub-title d-block mb-3">Stock Expert</span>
+            <p class="pale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+              perspiciatis ipsa modi accusantium repellat.</p>
+
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="person">
+            <div class="bio-img">
+              <figure>
+                <img src="images/person3.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+            <h2 class="text-black h1 red">James Bond</h2>
+            <span class="sub-title d-block mb-3">Bitcoin Expert</span>
+            <p class="pale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+              perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+          <div class="person">
+            <div class="bio-img">
+              <figure>
+                <img src="images/person4.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+            <h2 class="text-black h1 orange">Nick Jones</h2>
+            <span class="sub-title d-block mb-3">Financing Expert</span>
+            <p class="pale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+              perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="person">
+            <div class="bio-img">
+              <figure>
+                <img src="images/person6.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+            <h2 class="text-black h1 yellow">Bruce Banner</h2>
+            <span class="sub-title d-block mb-3">Founder</span>
+            <p class="pale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+              perspiciatis ipsa modi accusantium repellat.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="person">
+            <div class="bio-img">
+              <figure>
+                <img src="images/person5.jpeg" alt="Image" class="img-fluid">
+              </figure>
+              <div class="social">
+                <a href="#"><span class="icon-facebook"></span></a>
+                <a href="#"><span class="icon-twitter"></span></a>
+                <a href="#"><span class="icon-instagram"></span></a>
+              </div>
+            </div>
+            <h2 class="text-black h1 red">Tim Rook</h2>
+            <span class="sub-title d-block mb-3">Market Expert</span>
+            <p class="pale">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum excepturi corporis qui doloribus
+              perspiciatis ipsa modi accusantium repellat.</p>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="site-section testimonial-wrap bg-light" id="testimonials-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-3 yellow">Testimonials</h2>
+        </div>
+      </div>
+    </div>
+    <div class="slide-one-item home-slider owl-carousel">
+      <div>
+        <div class="testimonial">
+          <figure class="mb-4 d-block align-items-center justify-content-center">
+            <div><img src="images/blankpic.png" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+          </figure>
+          <blockquote class="mb-3">
+            <p class="pale">&ldquo;hey i am jemmy jhon at first i didn't know about any invested i was wasting my money after joining
+              Stotri. I feel safe and my money is in right place &rdquo;</p>
+          </blockquote>
+          <p class="text-black"><strong>Jemmy jhon</strong></p>
+
+
+        </div>
+      </div>
+      <div>
+        <div class="testimonial">
+
+          <figure class="mb-4 d-block align-items-center justify-content-center">
+            <div><img src="images/person6.jpeg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+          </figure>
+
+          <blockquote class="mb-3">
+            <p class="pale">&ldquo;Stotri is one of the best financial company they bring startup and investers at one place they are
+              trasparent and trust worthy&rdquo;</p>
+          </blockquote>
+
+          <p class="text-black"><strong>Robert James</strong></p>
+
+
+        </div>
+      </div>
+
+      <div>
+        <div class="testimonial">
+          <figure class="mb-4 d-block align-items-center justify-content-center">
+            <div><img src="images/blankpic.png" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+          </figure>
+          <blockquote class="mb-3">
+            <p class="pale">&ldquo;Stotri the company and environment is awseome and offers best place to invest there experts are
+              highly qualified and give right advice and they are friendly too.&rdquo;</p>
+          </blockquote>
+          <p class="text-black"><strong>Roger Stark</strong></p>
+
+
+        </div>
+
+      </div>
+
+      <div>
+        <div class="testimonial">
+          <figure class="mb-4 d-block align-items-center justify-content-center">
+            <div><img src="images/person6.jpeg" alt="Image" class="w-100 img-fluid mb-3 shadow"></div>
+          </figure>
+          <blockquote class="mb-3">
+            <p class="pale"> &ldquo;Stotri is one of the best financial company they bring startup and investers at one place they are
+              trasparent and trust worthy&rdquo;</p>
+          </blockquote>
+          <p class="text-black"><strong>Morry Rock</strong></p>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <div class="site-section testimonial-wrap" id="testimonials-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-3 orange">Infastructure</h2>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="slide-one-item home-slider owl-carousel">
+
+      <div class="row">
+
+        <div class="testimonial">
+          <div class="row">
+            <div class="col-lg-7 ">
+              <img src="images/infa2.jpeg" alt="Image" width="800px" height="800px" class="img-fluid ">
+            </div>
+            <div class="col-lg-5 " style="padding: 60px;">
+              <blockquote class="mb-3">
+                <p class="pale">&ldquo;Stotri is one of the best financial company they bring startup and investers at one place they
+                  are trasparent and trust worthy&rdquo;</p>
+              </blockquote>
+
+              <p class="text-black"><strong>Robert James</strong></p>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="testimonial">
+        <div class="row">
+          <div class="col-lg-5 " style="padding: 60px;">
+            <blockquote class="mb-3">
+              <p class="pale">&ldquo;Stotri is one of the best financial company they bring startup and investers at one place they
+                are trasparent and trust worthy&rdquo;</p>
+            </blockquote>
+
+            <p class="text-black"><strong>Robert James</strong></p>
+          </div>
+          <div class="col-lg-7 ">
+            <img src="images/infa4.jpeg" alt="Image" width="800px" height="800px" class="img-fluid ">
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+  </div>
+
+  <div class="site-section" id="blog-section">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title mb-3 ggreen">News & Events</h2>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-5 ml-auto">
+          <h2 class="text-black mb-4 yellow">News</h2>
+          <ul class="list-unstyled">
+            <li class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/infa2.jpeg" alt="Image" class="img-fluid ">
+              <h3 class="text-black m-0 pale">Best Award for work place</h3>
+              <span class="text-black red">29/10/12</span>
+            </li>
+            <li class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/infa4.jpeg" alt="Image" class="img-fluid ">
+              <h3 class="text-black m-0 pale">Best Award for Infastructure</h3>
+              <span class="text-black red">30/12/12</span>
+            </li>
+            <li class="mb-4" ddata-aos="fade-up" data-aos-delay="300">
+              <img src="images/infa3.jpeg" alt="Image" class="img-fluid ">
+              <h3 class="text-black m-0 pale">Top Emerging company</h3>
+              <span class="text-black red">25/2/12</span>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="col-md-5 ml-auto">
+          <h2 class="text-black mb-4 orange">Events</h2>
+          <ul class="list-unstyled">
+            <li class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/infa7.jpeg" alt="Image" class="img-fluid ">
+              <h3 class="text-black m-0 pale" style="text-decoration: line-through;"> Techno Work fest for Investers </h3>
+              <span class="text-black  red">completed </span>
+            </li>
+            <li class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/landing_1.png" alt="Image" class="img-fluid ">
+              <h3 class="text-black m-0 pale">Live Webinars On Stock Market</h3>
+              <span class="text-black red">On Going</span>
+            </li>
+            <li class="mb-4" data-aos="fade-up" data-aos-delay="300">
+              <img src="images/about_1.jpg" alt="Image" class="img-fluid ">
+              <h3 class="text-black m-0 pale">Tech Meet On Startup</h3>
+              <span class="text-black red">UpComming</span>
+            </li>
+
+          </ul>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="site-section bg-light" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <h2 class="text-black yellow">Contact Us</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 col-lg-6 mb-6 mb-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <form action="#" method="post">
+            <div class="form-group row">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <input type="text" class="form-control" placeholder="First name" />
+              </div>
+              <div class="col-md-6">
+                <input type="text" class="form-control" placeholder="First name" />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <input type="text" class="form-control" placeholder="Email address" />
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <div class="col-md-12">
+                <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30"
+                  rows="10"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-md-6 mr-auto">
+                <input type="submit" class="btn btn-block btn-primary text-white py-2 px-5" value="Send Message" />
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="mapouter col-md-12 col-lg-6 mb-6 mb-lg-6" data-aos="fade-left" data-aos-delay="200">
+          <div class="gmap_canvas">
+            <iframe width="800" height="500" id="gmap_canvas"
+              src="https://maps.google.com/maps?q=vnrvjiet&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+              scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </div>
+          <script>
+          </script>
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 500px;
+              width: 800px;
+            }
+
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 500px;
+              width: 780px;
+            }
+
+            @media (max-width: 660px) {
+              .mapouter {
+                display: none;
+              }
+
+              .gmap_canvas {
+                display: none;
+
+              }
+            }
+          </style>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+  <div class="site-section " id="contact-section">
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class=" mb-4 ggreen">About Us</h2>
+            <p class="pale">
+              our goal is to bring startup,company,market to the people who are willing to invest. we bring investers
+              and startup in one place so both can get benefits.
+            </p>
+          </div>
+
+          <div class="col-md-3 ml-auto">
+            <h2 class=" mb-4 yellow">Quick Links</h2>
+            <ul class="list-unstyled">
+              <li >
+                <a href="#about-section" class="smoothscroll pale">About Us</a>
+              </li>
+              <li >
+                <a href="gallery.html" class="smoothscroll pale">gallery</a>
+              </li>
+              <li >
+                <a href="#features-section" class="smoothscroll pale">Feature</a>
+              </li>
+              
+              <li >
+                <a href="#clients" class="smoothscroll pale">Clients</a>
+              </li>
+              <li >
+                <a href="#contact-section" class="smoothscroll pale">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <div class="mb-5">
+              <h2 class=" mb-4 orange">Follow Us</h2>
+              <a href="#" class="pl-0 pr-3 pale"><span class="icon-facebook"></span></a>
+              <a href="#" class="pl-3 pr-3 pale"><span class="icon-twitter"></span></a>
+              <a href="#" class="pl-3 pr-3 pale"><span class="icon-instagram"></span></a>
+              <a href="#" class="pl-3 pr-3 pale"><span class="icon-linkedin"></span></a>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- .site-wrap -->
+
+
+
+
+
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/jquery-ui.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+      <script src="js/jquery.countdown.min.js"></script>
+      <script src="js/bootstrap-datepicker.min.js"></script>
+      <script src="js/jquery.easing.1.3.js"></script>
+      <script src="js/aos.js"></script>
+      <script src="js/jquery.fancybox.min.js"></script>
+      <script src="js/jquery.sticky.js"></script>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+
+
+      <script>
+        var options = {
+          time: '0.3s', // default: '0.3s'
+          mixColor: '#fff', // default: '#fff'
+          backgroundColor: '#fff',  // default: '#fff'
+          buttonColorDark: '#100f2c',  // default: '#100f2c'
+          buttonColorLight: '#fff', // default: '#fff'
+          saveInCookies: false, // default: true,
+          autoMatchOsTheme: true // default: true
+        }
+
+        //Get the button
+        var mybutton = document.getElementById("darkmode");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+
+        // change to dark mode
+        function darkFunction() {
+          const darkmode = new Darkmode(options);
+          darkmode.toggle();
+          console.log(darkmode.isActivated())
+        }
+      </script>
+
+      <script src="js/typed.js"></script>
+      <script>
+        var typed = new Typed(".typed-words", {
+          strings: ["Low Risk", "High Gain"],
+          typeSpeed: 80,
+          backSpeed: 80,
+          backDelay: 4000,
+          startDelay: 1000,
+          loop: true,
+          showCursor: true
+        });
+
+        var typed1 = new Typed(".money", {
+          strings: ["Money"],
+          typeSpeed: 120,
+
+          startDelay: 2500,
+          loop: false,
+          showCursor: true
+        });
+
+        var typed2 = new Typed(".savings", {
+          strings: ["Savings."],
+          typeSpeed: 120,
+
+          startDelay: 2500,
+          loop: false,
+          showCursor: true
+        });
+
+        var typed3 = new Typed(".us", {
+          strings: ["Us."],
+          typeSpeed: 120,
+
+          startDelay: 2500,
+          loop: false,
+          showCursor: true
+        });
+
+      </script>
+
+      <script src="js/main.js"></script>
+
+</body>
+
+</html>
